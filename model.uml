@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_E8B7UHi3Eeib8c-P5d59hw" name="NewModel">
+  <packagedElement xmi:type="uml:Class" xmi:id="_bHcfcHl5Eei5-8udOAFt-g" name="Musician" visibility="public">
+    <generalization xmi:id="_pm_7QIC2EeiSZasca653Gw" general="_mi_XsIC2EeiSZasca653Gw"/>
+    <ownedAttribute xmi:id="_dyo6YHl5Eei5-8udOAFt-g" name="skillLevel" type="_iKBo0IC1EeiSZasca653Gw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="__JELAIC1EeiSZasca653Gw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-vks8IC1EeiSZasca653Gw" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_ey0lAHl5Eei5-8udOAFt-g" name="Instrument Type">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_6Pf7oHsxEeiZVv0qpvJvwg" name="PhoneNum">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_3r0CkHmfEei5-8udOAFt-g" name="Vocalist" visibility="public">
+    <generalization xmi:id="_f4Y3QHssEeiZVv0qpvJvwg" general="_bHcfcHl5Eei5-8udOAFt-g"/>
+    <ownedAttribute xmi:id="_EO-10HstEeiZVv0qpvJvwg" name="Boy/Girl">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_RTiLgIIjEeiuxo9g71FWlw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_RTiykIIjEeiuxo9g71FWlw" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_FMtCUHstEeiZVv0qpvJvwg" name="Key">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedOperation xmi:id="_HAJ88HstEeiZVv0qpvJvwg" name="getGender"/>
+    <ownedOperation xmi:id="_IXyeQHstEeiZVv0qpvJvwg" name="getKey"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_-P-gwHssEeiZVv0qpvJvwg" name="Pianist" visibility="public">
+    <generalization xmi:id="__sds4HssEeiZVv0qpvJvwg" general="_bHcfcHl5Eei5-8udOAFt-g"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_KhFtEHstEeiZVv0qpvJvwg" name="Guitarist" visibility="public">
+    <packageImport xmi:id="_XD9f4ICgEeiSZasca653Gw">
+      <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#_0"/>
+    </packageImport>
+    <generalization xmi:id="_Oq2-0HstEeiZVv0qpvJvwg" general="_bHcfcHl5Eei5-8udOAFt-g"/>
+    <ownedAttribute xmi:id="_PE52gHstEeiZVv0qpvJvwg" name="Key">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_SROBgHstEeiZVv0qpvJvwg" name="Bass" visibility="public">
+    <generalization xmi:id="_VkzSIHstEeiZVv0qpvJvwg" general="_KhFtEHstEeiZVv0qpvJvwg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_YP0t8HstEeiZVv0qpvJvwg" name="Drummer" visibility="public">
+    <generalization xmi:id="_ZKUnUHstEeiZVv0qpvJvwg" general="_bHcfcHl5Eei5-8udOAFt-g"/>
+    <ownedAttribute xmi:id="_Zf-uQHstEeiZVv0qpvJvwg" name="Type">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Enumeration" xmi:id="_iKBo0IC1EeiSZasca653Gw" name="SkillLevel" visibility="public">
+    <ownedLiteral xmi:id="_mEUUIIC1EeiSZasca653Gw" name="Beginner"/>
+    <ownedLiteral xmi:id="_oGMFQIC1EeiSZasca653Gw" name="Intermediate "/>
+    <ownedLiteral xmi:id="_pHApEIC1EeiSZasca653Gw" name="Advanced"/>
+    <ownedLiteral xmi:id="_qNUJ0IC1EeiSZasca653Gw" name="Professional"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_mi_XsIC2EeiSZasca653Gw" name="Person" visibility="public">
+    <generalization xmi:id="_dNkD8IC3EeiSZasca653Gw" general="_XGPgYIC3EeiSZasca653Gw"/>
+    <ownedAttribute xmi:id="_0NoiwIC2EeiSZasca653Gw" name="lastName">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_1sDokIC2EeiSZasca653Gw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_1sDokYC2EeiSZasca653Gw" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_2ROLIIC2EeiSZasca653Gw" name="firstName">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_2fZxEIC2EeiSZasca653Gw" name="email">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_E6eTgIC3EeiSZasca653Gw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_E6eTgYC3EeiSZasca653Gw" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_-GEAcIC2EeiSZasca653Gw" name="phoneNum">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_MKC4kIC3EeiSZasca653Gw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_MKC4kYC3EeiSZasca653Gw" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_R_QYcIC3EeiSZasca653Gw" name="inYouthGroup">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_UacogIC3EeiSZasca653Gw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_UacogYC3EeiSZasca653Gw" value="1"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_XGPgYIC3EeiSZasca653Gw" name="Media" visibility="public"/>
+  <packagedElement xmi:type="uml:Model" xmi:id="_32voEIIiEeiuxo9g71FWlw" name="NewModel">
+    <packagedElement xmi:type="uml:Class" xmi:id="_32voEYIiEeiuxo9g71FWlw" name="Musician" visibility="public">
+      <generalization xmi:id="_32voEoIiEeiuxo9g71FWlw" general="_32voLoIiEeiuxo9g71FWlw"/>
+      <ownedAttribute xmi:id="_32voE4IiEeiuxo9g71FWlw" name="skillLevel" type="_32voKYIiEeiuxo9g71FWlw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_32voFIIiEeiuxo9g71FWlw"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_32voFYIiEeiuxo9g71FWlw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_32voFoIiEeiuxo9g71FWlw" name="Instrument Type">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_32voF4IiEeiuxo9g71FWlw" name="PhoneNum">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_32voGIIiEeiuxo9g71FWlw" name="Vocalist" visibility="public">
+      <generalization xmi:id="_32voGYIiEeiuxo9g71FWlw" general="_32voEYIiEeiuxo9g71FWlw"/>
+      <ownedAttribute xmi:id="_32voGoIiEeiuxo9g71FWlw" name="Boy/Girl">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_32voG4IiEeiuxo9g71FWlw" name="Key">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedOperation xmi:id="_32voHIIiEeiuxo9g71FWlw" name="getGender"/>
+      <ownedOperation xmi:id="_32voHYIiEeiuxo9g71FWlw" name="getKey"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_32voHoIiEeiuxo9g71FWlw" name="Pianist" visibility="public">
+      <generalization xmi:id="_32voH4IiEeiuxo9g71FWlw" general="_32voEYIiEeiuxo9g71FWlw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_32voIIIiEeiuxo9g71FWlw" name="Guitarist" visibility="public">
+      <packageImport xmi:id="_32voIYIiEeiuxo9g71FWlw">
+        <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#_0"/>
+      </packageImport>
+      <generalization xmi:id="_32voIoIiEeiuxo9g71FWlw" general="_32voEYIiEeiuxo9g71FWlw"/>
+      <ownedAttribute xmi:id="_32voI4IiEeiuxo9g71FWlw" name="Key">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_32voJIIiEeiuxo9g71FWlw" name="Bass" visibility="public">
+      <generalization xmi:id="_32voJYIiEeiuxo9g71FWlw" general="_32voIIIiEeiuxo9g71FWlw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_32voJoIiEeiuxo9g71FWlw" name="Drummer" visibility="public">
+      <generalization xmi:id="_32voJ4IiEeiuxo9g71FWlw" general="_32voEYIiEeiuxo9g71FWlw"/>
+      <ownedAttribute xmi:id="_32voKIIiEeiuxo9g71FWlw" name="Type">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_32voKYIiEeiuxo9g71FWlw" name="SkillLevel" visibility="public">
+      <ownedLiteral xmi:id="_32voKoIiEeiuxo9g71FWlw" name="Beginner"/>
+      <ownedLiteral xmi:id="_32voK4IiEeiuxo9g71FWlw" name="Intermediate "/>
+      <ownedLiteral xmi:id="_32voLIIiEeiuxo9g71FWlw" name="Advanced"/>
+      <ownedLiteral xmi:id="_32voLYIiEeiuxo9g71FWlw" name="Professional"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_32voLoIiEeiuxo9g71FWlw" name="Person" visibility="public">
+      <generalization xmi:id="_32voL4IiEeiuxo9g71FWlw" general="_32voPYIiEeiuxo9g71FWlw"/>
+      <ownedAttribute xmi:id="_32voMIIiEeiuxo9g71FWlw" name="lastName">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_32voMYIiEeiuxo9g71FWlw" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_32voMoIiEeiuxo9g71FWlw" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_32voM4IiEeiuxo9g71FWlw" name="firstName">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_32voNIIiEeiuxo9g71FWlw" name="email">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_32voNYIiEeiuxo9g71FWlw" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_32voNoIiEeiuxo9g71FWlw" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_32voN4IiEeiuxo9g71FWlw" name="phoneNum">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_32voOIIiEeiuxo9g71FWlw" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_32voOYIiEeiuxo9g71FWlw" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_32voOoIiEeiuxo9g71FWlw" name="inYouthGroup">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_32voO4IiEeiuxo9g71FWlw" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_32voPIIiEeiuxo9g71FWlw" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_32voPYIiEeiuxo9g71FWlw" name="Media" visibility="public"/>
+  </packagedElement>
+</uml:Model>
